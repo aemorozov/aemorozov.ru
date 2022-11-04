@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Snake_1.5</title>
+</head>
+<body>
+  <div class="start_game" id="start_game">
+    <h2>Snake_1.5</h2>
+    <p>Level:</p> 
+    <p>
+      <a href="#" class="level" id="10" speed="200">1</a>
+      <a href="#" class="level" id="15" speed="150">2</a> 
+      <a href="#" class="level" id="20" speed="100">3</a>
+    </p>
+    <a href="#" class="startButton" id="startButton">Start</a>
+  </div>
+<div class="container" id="board">
+</div>
+<div class="game_over" id="game_over">
+  <p>You've run into a tail</p>
+  <p>Score: <span class="score" id="score"></span></p>
+  <p><a href="#" onclick="location.reload();" class="button" id="button">Start over</a></p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

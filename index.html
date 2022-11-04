@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Aleksei Morozov | Frontend Developer</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="header">
+      <img src="img/burger.svg" class="burger" />
+      <div class="logo">
+        <img src="img/logotype.svg" alt="Aleksei Morozov" />
+        <div class="finder">
+          <form>
+            <input type="text" placeholder="search here..." />
+            <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="header">
+        <div class="logoMobile">
+          <a href="index.html"
+            ><img src="img/logotype.svg" class="mobileLogo"
+          /></a>
+          <img src="img/close.svg" class="close" />
+        </div>
+      </div>
+      <ul class="firstLevel">
+        <a href="index.html" data-type="home"
+          ><li class="bottomLineToMobileMenu" data-type="home">Home</li></a
+        >
+        <a href="#portfolio" data-type="posts"
+          ><li class="bottomLineToMobileMenu" data-type="posts">
+            Portfolio
+          </li></a
+        >
+        <a href="#about" data-type="about"
+          ><li class="bottomLineToMobileMenu" data-type="about">About me</li></a
+        >
+        <a href="#contacts" data-type="contacts"
+          ><li class="bottomLineToMobileMenu" data-type="contacts">
+            Contacts
+          </li></a
+        >
+      </ul>
+    </div>
+    <div class="breadcrumbs"></div>
+    <div class="home" id="home">
+      <div class="homeContent">
+        <img src="/img/background.jpg" />
+        <h1 id="h1_1" class="h1_1">
+          Hello, my name is Aleksei, i'm Frontend Developer . . .
+        </h1>
+        <h1 id="h1_2" class="h1_2">
+          and this is my text-script for a few lines
+        </h1>
+      </div>
+    </div>
+    <h2 class="title" id="portfolio">Portfolio</h2>
+    <div class="posts" id="posts">
+      <div class="post">
+        <a class="linkBlock" href="/uvent.html">
+          <img
+            src="/projects/Uvent/1.png"
+            alt="uvent - website holiday organization"
+          />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Uvent - holiday organization</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">03 november, 2022</i>
+          </p>
+          <p class="postContent">
+            This is my first commercial work. Website is fully optimized for
+            search engines, has high rates in download ratings and code
+            analyzers.
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/circleText.html">
+          <img src="/projects/circleText/1.png" alt="Circle Text on JS" />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Script for the circle text</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">03 november, 2022</i>
+          </p>
+          <p class="postContent">
+            It often happens that a designer creates a layout with elements that
+            are difficult to implement, such as circular text. This script will
+            help you to rotate any text and distribute the characters exactly
+            according to the coordinates.
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/snake.html">
+          <img src="/projects/Snake/1.jpg" alt="img3" />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Web game 'Snake_1.5'</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">06 march, 2022</i>
+          </p>
+          <p class="postContent">
+            This is my first real game. The game itself was written based on a
+            square field drawn in one of the lessons on JS. After the lesson, it
+            seemed to me that it would be great to implement a simple game...
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/sliderForReviews.html">
+          <img
+            src="/projects/SliderForReviews/1.png"
+            alt="Slider for reviews"
+          />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Slider for reviews</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">03 november, 2022</i>
+          </p>
+          <p class="postContent">
+            This script can be used to place and scroll testimonials on a page.
+            It manages blocks by mouse wheel scrolling, clicking and dragging.
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/dynemicHorizontalMenu.html">
+          <img src="/projects/DynemicHorisontalMenu/8.png" alt="img1" />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Dynemic horizontal menu for Web</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">02 august, 2022</i>
+          </p>
+          <p class="postContent">
+            This is the result of one of the parts of my test assignment that I
+            passed. In general, the entire site you are on is built on a
+            template...
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/dynemicMobileMenu.html">
+          <img
+            src="/projects/DynemicMobileMenu/2022-08-26_14-31-28.png"
+            alt="img2"
+          />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Dynemic mobile menu for Web</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">02 august, 2022</i>
+          </p>
+          <p class="postContent">
+            This is also the result of one of the parts of my test assignment
+            that I passed. In general, the entire site you are on is built on a
+            template that I needed to make...
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/superSlider.html">
+          <img src="/projects/SuperSlider/2.jpg" alt="img4" />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">SuperSlider</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">25 august, 2022</i>
+          </p>
+          <p class="postContent">
+            This is a project from the training course "7 days - 7 projects". In
+            this course, not all projects were worthy of attention and placement
+            on my site, but this slider seems to me a great solution for a
+            simple...
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/printingTextLines.html">
+          <img
+            src="/projects/PrintingTextLines/2022-08-26_14-58-09.png"
+            alt="img4"
+          />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Printing text lines</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">25 august, 2022</i>
+          </p>
+          <p class="postContent">
+            This script is the result of my creativity, just one day I came up
+            with an idea and I turned it into reality. This script may not be
+            the best and has disadvantages, but it is quite suitable for a
+            beautiful presentation of the text. Perhaps it
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/AIMGame.html">
+          <img src="/projects/AIMGame/5.jpg" alt="img5" />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">AIM Game</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">02 august, 2022</i>
+          </p>
+          <p class="postContent">
+            This is also my study work from my marathon "7 days - 7 projects".
+            It turned out to be a very beautiful and funny game, one of my
+            favorite JavaScript projects...
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/dragAndDrop.html">
+          <img src="/projects/DragAndDrop/3.jpg" alt="img3" />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Drag and Drop</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">06 march, 2022</i>
+          </p>
+          <p class="postContent">
+            This script is also part of my training marathon. In general, this
+            script has greatly expanded the framework in my head regarding the
+            use of the JS language in development...
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/webSlider.html">
+          <img src="/projects/SliderForWeb/4.jpg" alt="img3" />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">WebSlider</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">06 march, 2022</i>
+          </p>
+          <p class="postContent">
+            An excellent slider written as part of a training project. Simple,
+            beautiful and looks great. I really like this slider, it can be used
+            as a cool presentation...
+          </p>
+        </a>
+      </div>
+      <div class="post">
+        <a class="linkBlock" href="/StudyAssignmentFormsAndDynemics.html">
+          <img
+            src="/projects/StudyAssignment'FormsAndDynemics'/6.png"
+            alt="img3"
+          />
+          <p class="tag">JavaScript / HTML / CSS</p>
+          <h2 class="postTitle">Study Assignment 'Forms and Dynemics'</h2>
+          <p class="authorDateViews">
+            Aleksei Morozov <i class="dateViews">06 march, 2022</i>
+          </p>
+          <p class="postContent">
+            This is one of my last educational projects, in which various
+            beautiful dynamics were implemented. This project perfectly trains
+            the skills of developing simple forms and dynamics for
+            applications...
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <h2 class="title" id="portfolio">About me</h2>
+      <p>
+        I've been interested in programming and website layout since high
+        school, in 2004 I got acquainted with HTML and CSS. We created simple
+        websites.
+      </p>
+      <p>
+        Later I was looking for myself in other specialties, for example in
+        sales and working with electronics, but in 2020 I realized that I still
+        want to create something cool in IT.
+      </p>
+      <p>
+        I was trained in QA, studied fully manual testing and even managed to
+        work with Yandex, but later became interested in programming in
+        JavaScript.
+      </p>
+      <p>
+        Now I continue to study JavaScript and actively use the knowledge of
+        manual testing when developing my new projects.
+      </p>
+      <br />
+      <p>
+        <a href="/AlekseiMorozov.pdf" target="_blank">Download my CV here</a>
+      </p>
+    </div>
+    <div class="contacts" id="contacts">
+      <h2 class="title" id="portfolio">Contacts</h2>
+      <p>Location: Armenia, Yerevan</p>
+      <p>Tel: +374 44 07 03 39</p>
+      <p>Email: leafspb@gmail.com</p>
+      <p>Telegram: +7 921 919 47 57</p>
+    </div>
+  </body>
+  <script src="js/desktopMenuAnimation.js"></script>
+  <script src="js/mobileMenuAnimation.js"></script>
+  <script src="js/textAnimation.js"></script>
+  <!-- <script src="js/filterContent.js"></script> -->
+</html>

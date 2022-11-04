@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Aleksei Morozov | Uvent</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="header">
+      <img src="img/burger.svg" class="burger" />
+      <div class="logo">
+        <img src="img/logotype.svg" alt="Aleksei Morozov" />
+        <div class="finder">
+          <form>
+            <input type="text" placeholder="search here..." />
+            <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="header">
+        <div class="logoMobile">
+          <a href="index.html"
+            ><img src="img/logotype.svg" class="mobileLogo"
+          /></a>
+          <img src="img/close.svg" class="close" />
+        </div>
+      </div>
+      <ul class="firstLevel">
+        <a href="index.html" data-type="home"
+          ><li class="bottomLineToMobileMenu" data-type="home">Home</li></a
+        >
+        <a href="index.html#portfolio" data-type="posts"
+          ><li class="bottomLineToMobileMenu" data-type="posts">
+            Portfolio
+          </li></a
+        >
+        <a href="index.html#about" data-type="about"
+          ><li class="bottomLineToMobileMenu" data-type="about">About me</li></a
+        >
+        <a href="#contacts" data-type="contacts"
+          ><li class="bottomLineToMobileMenu" data-type="contacts">
+            Contacts
+          </li></a
+        >
+      </ul>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <img src="/projects/Uvent/1.png" class="imgInBlock" />
+        </td>
+        <td>
+          <h2 class="titleInBlock">Uvent - holiday organization</h2>
+          <p class="contentText">This is my first commercial work.</p>
+          <p class="contentText">
+            Website is fully optimized for search engines, has high rates in
+            download ratings and code analyzers.
+          </p>
+          <h2 class="titleInBlock">
+            <a href="https://aemorozov.github.io/uvent/" target="_blank"
+              >Demo</a
+            >
+            and
+            <a href="https://github.com/aemorozov/uvent" target="_blank">Git</a>
+          </h2>
+        </td>
+      </tr>
+    </table>
+    <div class="contacts">
+      <h2 class="title" id="contacts">Contacts</h2>
+      <p>Location: Armenia, Yerevan</p>
+      <p>Tel: +374 44 07 03 39</p>
+      <p>Email: leafspb@gmail.com</p>
+      <p>Telegram: +7 921 919 47 57</p>
+    </div>
+  </body>
+  <script src="js/desktopMenuAnimation.js"></script>
+  <script src="js/mobileMenuAnimation.js"></script>
+  <!-- <script src="js/textAnimation.js"></script> -->
+  <!-- <script src="js/filterContent.js"></script> -->
+</html>

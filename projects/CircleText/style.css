@@ -1,0 +1,21 @@
+.circle-1 {
+    position: relative;
+    margin: 100px auto;
+    min-width: 500px;
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    background: #40d8c9;
+}
+
+.circle-text {
+    position: absolute;
+    top: 225px;
+    left: 47%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    display: inline-block;
+    width: 25px;
+    transform: rotate(var(--rot)) translate(0, -200px);
+  }

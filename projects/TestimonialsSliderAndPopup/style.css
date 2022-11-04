@@ -1,0 +1,1263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
+
+/* === Сброс стилей === */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* === Конец сброса стилей === */
+
+
+/* === Начало блока Testimonials === */
+
+.testimonials {
+    width: 1160px;
+    height: 460px;
+    margin: 10px auto 160px auto;
+}
+
+.testimonials-h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #333B41;
+    margin-bottom: 47px;
+}
+
+.testimonials-block {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* -webkit-overflow-scrolling: touch; */
+}
+
+.testimonials-cards {
+    display: inline-flex;
+    width: 300%;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    /* -webkit-overflow-scrolling: touch; */
+}
+
+.testimonials-card {
+    width: 268px;
+    height: 391px;
+    background: #F1F3F2;
+    border: 2px solid rgba(243, 169, 248, 0.66);
+    border-radius: 20px;    
+    cursor: pointer;
+}
+
+.testimonials-duble {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    background: #F1F3F2;
+    border: 2px solid rgba(243, 169, 248, 0.66);
+    border-radius: 20px;   
+    transition: 0.1s ease-in-out; 
+    z-index: 100;
+    cursor: pointer;
+}
+
+.testimonials-icon {
+    float: left;
+    margin-top: 15px;
+    margin-left: 16px;
+}
+
+.name {
+    margin-top: 15px;
+    margin-left: 63px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.sub {
+    margin-top: 1px;
+    margin-left: 63px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #BDBDBD;
+}
+
+.comment {
+    width: 90%;
+    height: 90%;
+    font-weight: 300;
+    font-size: 15px;
+    color: #767474;
+    overflow: hidden;
+    margin: 10px auto;
+    line-height: 120%;
+}
+
+.gray-line {
+    margin: 21px auto 0 auto;
+    width: 600px;
+    height: 8px;
+    background-color: #F5F7F6;
+    border: 0.5px solid rgba(254, 189, 171, 0.74);
+    border-radius: 5px;
+}
+
+.items {
+    display: flex;
+    height: 100%;
+    cursor: pointer;
+}
+
+.item {
+    width: 12.5%;
+    height: 100%;
+}
+
+.big-orange-line {
+    height: 50px;
+    width: 12.3%;
+    margin-top: -23px;
+    /* padding-top: 29px; */
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.orange-line {
+    top: 17px;
+    position: relative;
+    margin: -10px auto 0 0;
+    width: 100%;
+    height: 6px;
+    background-color: #FE9013;;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-on-testimonials-div {
+    position: relative;
+    width: 25.69%;
+    height: 3.375vw;
+    border-radius: 5px;
+    margin-left: 0;
+    top: 32px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.button-on-testimonials-p {
+    line-height: 22.4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: calc(-14px + 2vw);
+    padding-bottom: calc(-14px + 2vw);
+}
+
+.close-button-for-testimonials {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.top-mobile-menu-background {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 0;
+}
+
+/* === Конец блока Testimonials === */
+
+/* === Стили для разрешения ниже 1350px === */
+
+@media (max-width: 1350px) {
+    
+    .testimonials {
+        width: 994px;
+        height: 460px;
+        margin: 10px auto 160px auto;
+    }
+
+    .testimonials-h3 {
+        margin-bottom: 30px;
+    }
+
+    .testimonials-cards {
+        width: 333.33%;
+    }
+
+    .testimonials-card {
+        width: 292px;
+    }
+
+    .for-big-screen {
+        display: none;
+    }
+
+    .testimonials-cards {
+        justify-content: space-around;
+    }
+
+    .testimonials-icon {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+
+    .name {
+        margin-top: 13px;
+        margin-left: 60px;
+        font-size: 16px;
+    }
+
+    .comment {
+        width: 90%;
+        height: 90%;
+    }
+
+    .gray-line {
+        margin: 19px auto 0 auto;
+        width: 400px;
+    }
+
+    .button-on-testimonials-div {
+        margin-left: 28px;
+        width: 297px;
+        top: 51px;
+        height: 54px;
+    }
+
+    .button-on-testimonials-p {
+        padding-top: 18px;
+    }
+}
+
+
+@media (max-width: 999px) {
+    .testimonials {
+        width: 95.4vw;
+        height: 800px;
+    }
+
+    .testimonials-cards {
+        flex-direction: column;
+        margin-left: 4%;
+        margin-right: 6%;
+        width: 90%;
+        height: 100%;
+    }
+
+    .testimonials-card {
+        width: 88vw;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .comment {
+        width: 95%;
+        height: 65%;
+        margin-left: 15px;
+    }
+
+    .testimonials-h3 {
+        margin-bottom: 0px;
+    }
+
+    .gray-line {
+        display: none;
+    }
+
+    .button-on-testimonials-div {
+        top:10px;
+        margin-left: 3.5vw;
+    }
+
+    .testimonials-green-plant {
+        top: 3800px;
+    }
+
+    .social-buttons {
+        display: none;
+    }
+
+    .footer-nav > ul {
+        margin-left: -30.5vw;
+    }
+
+    .subscribe, .email-submit {
+        display: none;
+    }
+
+    .social-buttons-for-mobile {
+        display: block;
+        float: right;
+    }
+
+    .social-button-for-mobile {
+        width: 100%;
+        height: 30px;
+    }
+
+    .designed {
+        margin-right: -30px;
+        margin-top: 297px;
+    }
+
+    .for-999-disp-none {
+        display: none;
+    }
+    
+}
+
+/* === Конец стилей для разрешения ниже 990px === (основано на vw) */
+
+/* === Стили для разрешения 640 === */
+
+@media (max-width: 640px) {
+
+    .header {
+        height: 34px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .header-content {
+        height: 34px;
+        line-height: 32px;
+    }
+
+    .top-logo {
+        display: none;
+    }
+
+    .top-logo-mobile {
+        display: block;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .close-button {
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .top-mobile-menu-background {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(0,0,0,0.3);
+        /* margin-top: -100vh; */
+        z-index: 0;
+        /* transition: .1s ease; */
+    }
+
+    .top-nav-mobile {
+        position: fixed;
+        margin-top: -350px;
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        transition: .3s ease-in-out;
+        z-index: 110;
+    }
+
+
+
+    .top-nav-mobile > ul {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        margin-left: -10px;
+    }
+
+    .top-nav-mobile > ul > li {
+        margin-top: 15px;
+    }
+
+    .top-nav-mobile > ul > li > a {
+        color: #000000;
+    }
+
+    .autor {
+        display: none;
+    }
+
+    .burger {
+        width: 40px;
+        height: 32px;
+        display: block;
+        padding-top: 11px;
+        padding-left: 20px;
+    }
+
+    .burger-menu-a {
+        float: right;
+    }
+
+    /* .burger:hover .top-nav-mobile {
+        margin-top: 200px;
+        transition: 0.3s ease-out;
+    } */
+
+    .orange-logo-mobile {
+        width: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .panda {
+        height: 58.5vw;
+        background-size: auto 100%;
+    }
+
+    .orange-circle {
+        width: 37vw;
+        height: 37vw;
+        top: 43px;
+        left: 51.5vw;
+    }
+
+    .text-on-circle {
+        width: 39vw;
+        left: 58vw;
+        top: 81.8px;
+    }
+
+    .button-on-circle {
+        left: 20px;
+        top: 43.4vw;
+        width: 298px;
+    }
+
+    .white-part {
+        margin-top: 66px;
+        padding-bottom: 1px;
+    }
+
+    .backstage {
+        margin-left: -7px;
+        width: 95%;
+    }
+
+    .phl130 {
+        margin-top: 24px;
+    }
+
+    .backstage-content {
+        flex: 0 0 84%;
+    }
+
+    .backstage-content > h4 {
+        margin-top: 31px;
+    }
+
+    .plh140 {
+        margin-top: 17px;
+    }
+
+    .flowers {
+        display: block;
+        top: -11vw;
+        height: 72vw;
+        right: -27px;
+    }
+
+    .slider {
+        margin-top: -160px;
+    }
+
+    .disp-none-640 {
+        display: none;
+    }
+
+    .card1, .card2 {
+        width: 44.7%;
+        height: 331px;
+    }
+
+    .choose-favorite > * > * > h6, .choose-favorite2 > * > * > h6 {
+        margin: 6px 0 0 10px;
+        font-size: 12px;
+    }
+
+    .hover-card > p {
+        margin: 0px 0 10px 9px;
+        font-size: 11px;
+    }
+
+    .simbol {
+        display: block !important;
+        top: -40px;
+        height: 30px;
+    }
+
+    .choose-buttons > a {
+        margin-top: 9px;
+        margin-left: 155px;
+    }
+
+    .choose-button {
+        top: calc(46px + 44vw);
+    }
+
+    .choose-button.left {
+        left: 33%;
+    }
+
+    .choose-button.right {
+        right: 33%;
+    }
+
+    .button-on-white-div {
+        width: 299px;
+        top: 396px;
+    }
+ 
+    .green-plant-for-small-desktop {
+        left: -60px;
+        bottom: -5px;
+        z-index: -100;
+    }
+
+    .strelitzia {
+        height: 128px;
+    }
+
+    .pink-block {
+        padding-top: 19px;
+        height: 778px;
+    }
+
+    .into-pink-block {
+        width: 100%;
+        height: 739px;
+    }
+
+    .pick {
+        padding-top: 9px;
+        font-size: 41px;
+    }
+
+    .we-know {
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 21px;
+        letter-spacing: 0.2px;
+    }
+
+    .covid-19 {
+        letter-spacing: -0.2px;
+        width: 98%;
+        padding-left: 19px;
+    }
+
+    .even {
+        padding-left: 19px;
+        letter-spacing: -0.2px;
+        width: 128%;
+    }
+
+    .how-it-works {
+        padding-top: 37px;
+    }
+
+    .for-center {
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    .card-with-monkey {
+        width: 27.8vw;
+        margin-top: -10px;
+    }
+
+    .square {
+        width: 25.8vw;
+        height: 25.8vw;
+    }
+
+    .in-card-with-monkey {
+        font-size: 2.4vw;
+        margin-top: 32px;
+    }
+
+    .button-on-pink-div {
+        top: 41px;
+        width: 293px;
+    }
+
+    .testimonials {
+        margin: 60px auto 181px auto;
+        height: 428px;
+    }
+    
+    .testimonials-cards {
+        justify-content: space-between;
+        margin-left: 1%;
+        margin-right: 2.2%;
+        height: 357px;
+        margin-top: 32px;
+    }
+
+    .testimonials-card {
+        height: 106px;
+        width: 93.5vw;
+        margin-top: auto;
+    }
+
+    .testimonials-green-plant {
+        right: 0px;
+        top: 3163px;
+        width: 129px;
+    }
+
+    .comment {
+        margin: 7px auto;
+        height: 35%;
+    }
+
+    .sub {
+        margin-left: 59px;
+    }
+
+    .button-on-testimonials-div {
+        margin: 0 auto;
+        width: 233px;
+        top: 38px;
+    }
+
+    .footer {
+        padding-top: 14px;
+        height: 284px;
+    }
+
+    .button-on-footer-div {
+        width: 291px;
+        top: 32px;
+    }
+
+    .footer-nav {
+        margin-top: 231px;
+    }
+
+    .footer-nav > ul > li > a {
+        padding-right: 32px;
+    }
+
+    .social-button-for-mobile {
+        height: 45px;
+    }
+
+    .designed {
+        margin-right: -32px;
+        margin-top: 199px;
+    }
+}
+
+
+/* === Конец стилей для разрешения 640 === */
+
+/* === Стили для разрешения ниже 639 === */
+
+@media (max-width: 639px) {
+
+    .button-on-circle {
+        display: none;
+    }
+
+    .button-on-circle-mobile-320 {
+        display: block;
+        position: inherit;
+        z-index: 2;
+        border-radius: 25px;
+        background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+        width: 250px;
+        height: 54px;
+        margin: 0 auto;
+    }
+
+    .orange-circle {
+        top: 36px;
+        left: 47.5vw;
+    }
+
+    .text-on-circle {
+        top: 56.8px;
+        left: 52vw;
+    }
+
+    .white-part {
+        margin-top: 30px;
+        padding-bottom: 250px;
+    }
+    
+    .button-on-circle-mobile-320 > p {
+        line-height: 22.4px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 16.5px;
+    }
+
+    .backstage {
+        margin-top: 60px;
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+
+    .flowers {
+        top: 100px;
+        right: -40px;
+        height: 350px;
+    }
+
+    .backstage-content > h2 {
+        font-size: 28px;
+    }
+
+    .slider {
+        margin-top: -60px;
+    }
+
+    .choose-favorite, .choose-favorite2 {
+        flex-wrap: wrap;
+    }
+
+    .card1, .card2 {
+        height: 52vw;
+    }
+
+    .hover-card > p {
+        font-size: 2vw;
+        margin: 2px 0 0 5px;
+    }
+
+    .hover-card > img {
+        height: 6vw;
+        
+    }
+
+    .simbol {
+        top: -5.5vw;
+    }
+
+    .choose-favorite > * > * > h6, .choose-favorite2 > * > * > h6 {
+        margin: 4px 0 0 5px;
+        font-size: 2.2vw;
+    }
+
+    .pick {
+        font-size: 28px;
+    }    
+
+    .we-know {
+        font-size: 16px;
+    }
+
+    .for-center {
+        margin: 30px auto;
+    }
+    
+    .footer {
+        height: 338px;
+    }
+    
+    .footer-content {
+        display: none;
+    }
+
+    .footer-mobile-320 {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .logo-mobile-320 > img {
+        width: 128px;
+        margin: 0 auto;
+    }
+
+    .social-buttons-for-mobile {
+        display: flex;
+        float: none;
+        margin: 30px auto;
+        width: 215px;
+        justify-content: space-evenly;
+    }
+
+    .social-button-for-mobile {
+        width: auto;
+    }
+
+    .gray-circle {
+        margin-left: 0;
+    }
+
+    .button-on-footer-div {
+        width: 250px;
+        top: -10px;
+        margin: 0 auto;
+    }
+
+    .designed {
+        margin-right: 0px;
+        margin-top: 11px;
+    }
+
+    .footer-nav {
+        margin-top: 100px;
+    }
+
+    .footer-nav > ul {
+        margin-left: 0;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .footer-nav > ul > li > a {
+        padding-right: 12px;
+    }
+
+}
+
+/* === Конец стилей для разрешения ниже 639 === */
+
+
+
+/* === Стили для разрешения ниже 500 === */
+
+@media (max-width: 500px) {
+    
+    .white-part {
+        margin-top: 30px;
+        padding-bottom: calc(-498px + 280vw);
+    }
+
+    .choose-favorite2 {
+        top: 0px;
+    }
+
+    .card1, .card2 {
+        height: 78vw;
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .choose-button {
+        display: none;
+    }
+
+    .button-on-white-div {
+        width: 250px;
+        top: calc(-630px + 375vw);
+    }
+
+    .pink-block {
+        height: 400vw;
+    }
+
+    .into-pink-block {
+        height: 380vw;
+    }
+
+    .green-arrows {
+        flex-direction: column;
+        height: 240vw;
+        width: 18%;
+        float: right;
+    }
+
+    .green-arrow {
+        rotate: 80deg;
+    }
+
+    .cards-with-monkey {
+        flex-direction: column;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .card-with-monkey {
+        width: 60vw;
+        margin-top: 25px;
+    }
+
+    .square {
+        width: 60vw;
+        height: 60vw;
+    }
+    
+    .in-card-with-monkey {
+        font-size: 6vw;
+        max-width: 250px;
+    }
+
+    .button-on-pink-div {
+        top: 20px;
+        width: 250px;
+    }
+
+    .covid-19 {
+        display: none;
+    }
+
+    .even {
+        display: none;
+    }
+
+
+    .testimonials-green-plant {
+        top: 1050vw;
+        width: 129px;
+    }
+
+}
+
+
+/* === Конец стилей для разрешения ниже 500 === */
+
+/* === Стили для разрешения 380 === */
+
+@media (max-width: 380px) {
+    .slider {
+        margin-top: 30px;
+    }
+
+    .button-on-white-div {
+        width: 250px;
+        top: calc(-540px + 375vw);
+    }
+
+    
+}
+
+
+
+/* === Конец стилей для разрешения 380 === */
+
+/* === Стили для разрешения 320px === */
+
+@media (max-width:320px) {
+
+    .header {
+        width: 100vw;
+    }
+
+    .panda {
+        height: 70vw;
+        background-size: auto 85.5%;
+    }
+
+    .orange-circle {
+        top: 55px;
+        left: 50.5vw;
+        width: 37.7vw;
+        height: 37.7vw;
+    }
+
+    .text-on-circle {
+        top: 76.8px;
+        left: 182px;
+    }
+
+    .white-part {
+        margin-top: 17px;
+        padding-bottom: 80px;
+    }
+
+    .button-on-circle-mobile-320 {
+        width: 296px;
+    }
+
+    .backstage {
+        margin-top: 38px;
+        margin-left: 0px;
+        margin-right: 0px;
+        /* letter-spacing: -2px; */
+    }
+
+    .backstage-content > h2 {
+        font-size: 24px;
+    }
+
+    .backstage-content {
+        flex: 0 0 100%;
+        padding-left: 11px;
+    }
+
+    .flowers {
+        top: 21px;
+        right: -40px;
+        height: 219px;
+    }
+
+    .phl130 {
+        margin-top: 13px;
+    }
+
+    .backstage-content > h4 {
+        margin-top: 21px;
+    }
+
+    .plh140 {
+        margin-top: 6px;
+    }
+
+    .slider {
+        margin-top: 20px;
+    }
+
+    .card1, .card2 {
+        height: 105vw;
+        width: 90%;
+        margin-top: 16px;
+    }
+
+    .choose-favorite > * > * > h6 {
+        margin: 8px 0 0 10px;
+        font-size: 12px;
+    }
+
+    .hover-card > p {
+        font-size: 12px;
+        margin: 2px 0 0 12px;
+    }
+
+    .hover-card > img {
+        height: 9vw;
+    }
+
+    .simbol {
+        top: -9.5vw;
+    }
+
+    .button-on-white-div {
+        width: 299px;
+        top: 21px;
+    }
+
+    .green-plant-for-small-desktop {
+        left: -24px;
+        bottom: -17px;
+        z-index: -100;
+        width: 91px;
+    }
+
+    .strelitzia {
+        height: 65px;
+        right: -19px;
+    }
+
+    .pink-block {
+        height: 1080px;
+    }
+
+    .into-pink-block {
+        width: 97%;
+        height: 1042px;
+    }
+
+    .pick {
+        font-size: 25px;
+        padding-top: 17px;
+    }
+
+    .we-know {
+        font-size: 18px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 14px;
+        text-align: center;
+    }
+
+    .how-it-works {
+        padding-top: 17px;
+        font-size: 25px;
+    }
+
+    .for-center {
+        margin: -5px auto;
+    }
+
+    .cards-with-monkey {
+        margin-left: 23%;
+    }
+
+    .square {
+        width: 52vw;
+        height: 52vw;
+    }
+
+    .green-arrows {
+        height: 725px;
+        width: 15%;
+        margin-top: 6px;
+        margin-right: 6px;
+    }
+
+    .cards-with-monkey {
+        margin-top: -13px;
+    }
+
+    .card-with-monkey {
+        margin-top: 38px;
+    }
+
+    .in-card-with-monkey {
+        font-size: 15px;
+        margin-top: 10px;
+        width: 47vw;
+    }
+
+    .green-arrow > img {
+        margin-left: -20px;
+        margin-bottom: -25px;
+    }
+
+    .button-on-pink-div {
+        top: 48px;
+        width: 293px;
+    }
+
+    .testimonials {
+        margin: 30px auto 125px auto;
+    }
+
+    .testimonials-h3 {
+        font-size: 24px
+    }
+
+    .testimonials-cards {
+        margin-top: 21px;
+    }
+
+    .testimonials-icon {
+        margin-top: 6px;
+        margin-left: 10px;
+    }
+
+    .button-on-testimonials-div {
+        top: 27px;
+    }
+
+    .name {
+        margin-top: 7px;
+        margin-left: 53px;
+    }
+
+    .sub {
+        margin-left: 54px;
+    }
+
+    .comment {
+        width: 90%;
+    }
+
+    .testimonials-green-plant {
+        right: 0px;
+        top: 3871px;
+        width: 60px;
+    }
+
+    .footer {
+        padding-top: 17px;
+    }
+
+    .social-buttons-for-mobile {
+        width: 254px;
+    }
+
+    .button-on-footer-div {
+        width: 297px;
+        top: -20px;
+    }
+
+    .designed {
+        margin-top: 5px;
+    }
+
+    .footer-nav {
+        margin-top: 89px;
+    }
+
+    .footer-nav > ul > li {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+}
+

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1920px;
+    margin: 0 0 0 0;
+}
+
+.homeContent {
+    list-style: none;
+    flex: 0 0 100%;
+    margin-bottom: 0px;
+}
+
+.homeContent img {
+    width: 100%;
+}
+
+.h1_1 {
+    font-size: 28px;
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+    line-height: 2rem;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-right: 1px solid #000;
+}
+
+.h1_2 {
+    font-size: 28px;
+    position: absolute;
+    top: 13rem;
+    left: 4rem;
+    line-height: 2rem;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-right: 1px solid #000;
+}
+
+
+@media screen and (min-width: 1920px) {
+    html{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 50%;
+        float: left;
+    }
+    body {
+        position: relative;
+        width: 1920px;
+        left: -50%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 90%;
+        margin: auto;
+    }
+    .h1_1 {
+        font-size: 20px;
+        max-width: 85%;
+        position: absolute;
+        top: 7rem;
+        left: 4rem;
+    }
+    .h1_2 {
+        font-size: 20px;
+        top: 9.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        width: 90%;
+        margin: auto;
+    }
+    .home {
+        margin: 0;
+    }
+    .h1_1 {
+        font-size: 20px;
+        top: 7rem;
+        left: 7%;
+        margin-right: 7%;
+    }
+    .h1_2 {
+        font-size: 20px;
+        top: 9.5rem;
+        left: 7%;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .h1_1 {
+        font-size: 16px;
+    }
+    .h1_2 {
+        font-size: 16px;
+    }
+}

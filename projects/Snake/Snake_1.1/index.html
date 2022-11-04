@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Snake_1.1</title>
+</head>
+<body>
+  <div class="start_game" id="start_game">
+    <h2>Snake_1.1</h2>
+    <p>Выберите размер поля:</p> 
+    <p>
+      <a href="#" class="boardSize" id="10">10х10</a>
+      <a href="#" class="boardSize" id="15">15х15</a> 
+      <a href="#" class="boardSize" id="20">20х20</a>
+    </p>
+    <p>Выберите скорость:</p>
+    <p>
+      <a href="#" class="speed" id="1">1</a> 
+      <a href="#" class="speed" id="2">2</a> 
+      <a href="#" class="speed" id="3">3</a>
+    </p>
+    <a href="#" class="startButton" id="startButton">Начать игру</a>
+  </div>
+<div class="container" id="board">
+</div>
+<div class="game_over" id="game_over">
+  <p>Вы столкнулись с хвостом!</p>
+  <p>Ваш счёт: <span class="score" id="score"></span></p>
+  <p><a href="#" onclick="location.reload(); return false;" class="button" id="button">Начать сначала</a></p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

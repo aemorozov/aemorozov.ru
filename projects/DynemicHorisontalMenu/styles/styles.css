@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1920px;
+    margin: 0 0 0 0;
+    color: #E9E9E9;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgb(255, 255, 255);
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    height: 3.5rem;
+    border-bottom: 1px solid #E9E9E9;
+    background: #EE204D;
+    z-index: 99;
+    transform: translateY(0);
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    line-height: 3.5rem;
+    padding: 0 1.2rem .3rem 1.2rem;
+    font-size: 1rem;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+.firstLevel {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+.firstLevel > li {
+    position: relative;
+    left: -50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bottomLine {
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    justify-content: space-between;
+    flex: 0 0 33.33333333%;
+    margin: 0 2rem 0 2rem;
+
+}
+
+.post {
+    list-style: none;
+    flex: 0 0 30%;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.post img {
+    width: 100%;
+}
+
+.post .tag {
+    font-size: 13px;
+    color: #ff9bac;
+    font-weight: bold;
+}
+
+.post .postTitle {
+    font-size: 24px;
+}
+
+.post .authorDateViews {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.post .dateViews {
+    font-weight: normal;
+    color: #d4d4d4;
+    font-style: normal;
+}
+
+.post .dateViews:before {
+    content: ' • ';
+}
+
+.post .postContent {
+    font-size: 14px;
+    color: #dfdede;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    justify-content: space-between;
+    flex: 0 0 90%;
+    margin: 0 2rem 0 2rem;
+    color: black;
+}
+
+.homeContent {
+    list-style: none;
+    flex: 0 0 100%;
+    margin-bottom: 0px;
+}
+
+.homeContent img {
+    width: 100%;
+}
+
+@media screen and (min-width: 1920px) {
+    html{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 50%;
+        float: left;
+    }
+    body {
+        position: relative;
+        width: 1920px;
+        left: -50%;
+    }
+}
