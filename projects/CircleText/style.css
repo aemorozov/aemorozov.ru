@@ -18,4 +18,5 @@
     display: inline-block;
     width: 25px;
     transform: rotate(var(--rot)) translate(0, -200px);
+    text-transform: uppercase;
   }
